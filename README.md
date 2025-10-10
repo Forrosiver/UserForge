@@ -1,10 +1,10 @@
-# ðŸŽ¨ UserForge
+# UserForge
 
 <div align="center">
 
 ![UserForge Banner](https://img.shields.io/badge/UserForge-Craft_Realistic_User_Profiles-purple?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDIxVjE5QzIwIDE3LjkzOTEgMTkuNTc4NiAxNi45MjE3IDE4LjgyODQgMTYuMTcxNkMxOC4wNzgzIDE1LjQyMTQgMTcuMDYwOSAxNSAxNiAxNUg4QzYuOTM5MTMgMTUgNS45MjE3MiAxNS40MjE0IDUuMTcxNTcgMTYuMTcxNkM0LjQyMTQzIDE2LjkyMTcgNCAxNy45MzkxIDQgMTlWMjFNMTYgN0MxNiA5LjIwOTE0IDE0LjIwOTEgMTEgMTIgMTFDOS43OTA4NiAxMSA4IDkuMjA5MTQgOCA3QzggNC43OTA4NiA5Ljc5MDg2IDMgMTIgM0MxNC4yMDkxIDMgMTYgNC43OTA4NiAxNiA3WiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==)
 
-**Generate realistic user profiles in seconds with a beautiful, modern interface**
+**Generate realistic user profiles in seconds with a modern interface**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -17,15 +17,15 @@
 
 ---
 
-## âœ¨ Features
+## Features
 
-- ðŸŽ¯ **Custom Filters** - Generate users by gender, nationality, and quantity
-- ðŸŒ **18+ Countries** - Support for US, UK, India, and 15+ other countries
-- ðŸŽ¨ **5 Theme Options** - Dark, Light, Red, Blue, and Green themes
-- ðŸ“± **Responsive Design** - Works seamlessly on all devices
-- âš¡ **Fast & Modern** - Built with performance in mind
-- ðŸ”„ **Live Updates** - Real-time user generation
-- ðŸ“Š **Detailed Profiles** - Complete user information including:
+- Custom Filters - Generate users by gender, nationality, and quantity
+- 18+ Countries - Support for US, UK, India, and 15+ other countries
+- 5 Theme Options - Dark, Light, Red, Blue, and Green themes
+- Responsive Design - Works seamlessly on all devices
+- Fast & Modern - Built with performance in mind
+- Live Updates - Real-time user generation
+- Detailed Profiles - Complete user information including:
   - Name (Title, First, Last)
   - Contact (Email, Phone, Cell)
   - Location (Address, City, State, Country, Zip)
@@ -33,7 +33,7 @@
   - Identification (Username, ID documents)
   - Profile Pictures (Large, Medium, Thumbnail)
 
-## ðŸš€ Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -42,28 +42,28 @@
 
 ### Installation
 
-1. **Clone the repository**
+1. Clone the repository
    ```bash
    git clone https://github.com/walterwhite-69/UserForge.git
    cd UserForge
    ```
 
-2. **Install dependencies**
+2. Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the application**
+3. Run the application
    ```bash
    python app.py
    ```
 
-4. **Open your browser**
+4. Open your browser
    ```
    http://localhost:5000
    ```
 
-## ðŸ“– API Documentation
+## API Documentation
 
 ### Endpoint: `GET /api/users`
 
@@ -73,23 +73,23 @@ Generate random user profiles with optional filters.
 
 | Parameter | Type | Description | Default | Example |
 |-----------|------|-------------|---------|---------|
-| `results` | integer | Number of users (1-50) | 10 | `?results=5` |
-| `gender` | string | Filter by gender (`male`, `female`) | - | `?gender=female` |
-| `nat` | string | Nationality code (see below) | - | `?nat=US` |
+| results | integer | Number of users (1-50) | 10 | ?results=5 |
+| gender | string | Filter by gender (male, female) | - | ?gender=female |
+| nat | string | Nationality code (see below) | - | ?nat=US |
 
 #### Supported Countries
 
 | Code | Country | Code | Country |
 |------|----------|------|---------|
-| `US` | United States | `GB` | United Kingdom |
-| `IN` | India | `CA` | Canada |
-| `AU` | Australia | `BR` | Brazil |
-| `FR` | France | `DE` | Germany |
-| `ES` | Spain | `MX` | Mexico |
-| `NL` | Netherlands | `CH` | Switzerland |
-| `DK` | Denmark | `FI` | Finland |
-| `IE` | Ireland | `NO` | Norway |
-| `NZ` | New Zealand | - | - |
+| US | United States | GB | United Kingdom |
+| IN | India | CA | Canada |
+| AU | Australia | BR | Brazil |
+| FR | France | DE | Germany |
+| ES | Spain | MX | Mexico |
+| NL | Netherlands | CH | Switzerland |
+| DK | Denmark | FI | Finland |
+| IE | Ireland | NO | Norway |
+| NZ | New Zealand | - | - |
 
 ### Example Request
 
@@ -135,7 +135,7 @@ curl "http://localhost:5000/api/users?results=3&gender=female&nat=IN"
 }
 ```
 
-## ðŸ Python Usage
+## Python Usage
 
 ```python
 import requests
@@ -143,7 +143,6 @@ import json
 
 BASE_URL = "http://localhost:5000"
 
-# Fetch 5 users from United States
 response = requests.get(f"{BASE_URL}/api/users?results=5&nat=US")
 data = response.json()
 
@@ -167,10 +166,9 @@ Location: Richardson, Pennsylvania
 --------------------------------------------------
 ```
 
-## ðŸŒ JavaScript Usage
+## JavaScript Usage
 
 ```javascript
-// Fetch 3 female users from India
 fetch('http://localhost:5000/api/users?results=3&gender=female&nat=IN')
   .then(response => response.json())
   .then(data => {
@@ -182,21 +180,20 @@ fetch('http://localhost:5000/api/users?results=3&gender=female&nat=IN')
   });
 ```
 
-## ðŸŽ¨ Themes
+## Themes
 
-UserForge comes with 5 beautiful themes:
+UserForge includes 5 themes:
+- Dark (default, with purple accents)
+- Light (clean and minimal)
+- Red (vibrant look)
+- Blue (cool and soft)
+- Green (fresh tone)
 
-- ðŸŒ™ **Dark** - Default dark theme with purple accents
-- â˜€ï¸ **Light** - Clean light theme
-- ðŸ”¥ **Red** - Vibrant red theme
-- ðŸ’§ **Blue** - Cool blue theme
-- ðŸŒ¿ **Green** - Fresh green theme
+Click the theme toggle button in the header to switch themes.
 
-Click the theme toggle button in the header to cycle through themes.
+## Deployment
 
-## ðŸš¢ Deployment
-
-### Deploy to Vercel
+### Vercel
 
 1. Install Vercel CLI:
    ```bash
@@ -208,7 +205,7 @@ Click the theme toggle button in the header to cycle through themes.
    vercel
    ```
 
-### Deploy to Heroku
+### Heroku
 
 1. Create a Heroku app:
    ```bash
@@ -220,74 +217,74 @@ Click the theme toggle button in the header to cycle through themes.
    git push heroku main
    ```
 
-### Deploy to Railway
+### Railway
 
 1. Connect your GitHub repository to Railway
-2. Configure the start command: `python app.py`
+2. Set the start command: `python app.py`
 3. Deploy!
 
-## ðŸ“ Project Structure
+## Project Structure
 
 ```
 UserForge/
 â”œâ”€â”€ static/
-â”‚   â”œâ”€â”€ index.html      # Main HTML file
-â”‚   â”œâ”€â”€ style.css       # Styles and themes
-â”‚   â””â”€â”€ app.js          # Frontend JavaScript
-â”œâ”€â”€ app.py              # Flask backend server
-â”œâ”€â”€ example_fetch.py    # Python usage examples
-â”œâ”€â”€ requirements.txt    # Python dependencies
-â”œâ”€â”€ vercel.json         # Vercel deployment config
-â””â”€â”€ README.md           # This file
+â”‚   â”œâ”€â”€ index.html
+â”‚   â”œâ”€â”€ style.css
+â”‚   â””â”€â”€ app.js
+â”œâ”€â”€ app.py
+â”œâ”€â”€ example_fetch.py
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ vercel.json
+â””â”€â”€ README.md
 ```
 
-## ðŸ› ï¸ Tech Stack
+## Tech Stack
 
-- **Backend**: Flask (Python)
-- **Frontend**: Vanilla JavaScript, HTML5, CSS3
-- **API**: RandomUser.me API
-- **Styling**: Custom CSS with CSS Variables
-- **Deployment**: Vercel/Heroku/Railway compatible
+- Backend: Flask (Python)
+- Frontend: HTML5, CSS3, JavaScript
+- API: RandomUser.me
+- Styling: Custom CSS Variables
+- Deployment: Vercel, Heroku, Railway
 
-## ðŸ“ License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ðŸ¤ Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Fork the project
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## ðŸ’¡ Use Cases
+## Use Cases
 
-- **Development & Testing** - Generate test user data for applications
-- **UI/UX Design** - Populate mockups with realistic user profiles
-- **Data Analysis** - Create sample datasets for analysis
-- **Education** - Learn API integration and data handling
+- Development & Testing - Generate test user data
+- UI/UX Design - Populate designs with realistic profiles
+- Data Analysis - Create sample datasets
+- Education - Learn API integration and JSON handling
 
-## ðŸ™ Acknowledgments
+## Acknowledgments
 
-- User data provided by [RandomUser.me](https://randomuser.me/)
-- Icons and design inspiration from modern web design trends
+- Data: [RandomUser.me](https://randomuser.me/)
+- Inspiration: modern minimal web design
 
-## ðŸ“ž Contact
+## Contact
 
-Have questions or want to collaborate? Reach out!
+Have questions or want to collaborate?
 
-- ðŸ’¬ **Discord Server**: [discord.gg/rgWcEw5G8a](https://discord.gg/rgWcEw5G8a)
-- ðŸ‘¤ **Discord Username**: `heisenburger_7`
+- Discord: [discord.gg/rgWcEw5G8a](https://discord.gg/rgWcEw5G8a)
+- Discord Username: heisenburger_7
 
 ---
 
 <div align="center">
 
-**Made with â¤ï¸ by Walter**
+Made with love by Walter
 
-[â¬† back to top](#-userforge)
+[Back to top](#userforge)
 
 </div>
