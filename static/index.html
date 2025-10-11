@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserForge - Craft Realistic User Profiles</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-content">
+            <h1 class="welcome-title gradient-text">UserForge</h1>
+            <p class="welcome-subtitle">Craft realistic user profiles in seconds</p>
+            <button class="enter-btn" id="enterBtn">
+                <span>Enter</span>
+                <span class="enter-icon">→</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="main-app" id="mainApp" style="display: none;">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <h1 class="logo gradient-text">UserForge</h1>
+                    <p class="tagline">Craft realistic user profiles in seconds</p>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🎨</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-panel">
+                <div class="filter-group">
+                    <label for="quantity">Results</label>
+                    <input type="number" id="quantity" min="1" max="50" value="12">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="gender">Gender</label>
+                    <div class="custom-select" id="genderSelect">
+                        <div class="select-trigger">
+                            <span>👥 All</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="select-options">
+                            <div class="select-option" data-value="">👥 All</div>
+                            <div class="select-option" data-value="male">👨 Male</div>
+                            <div class="select-option" data-value="female">👩 Female</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="gender" value="">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="nationality">Nationality</label>
+                    <div class="custom-select" id="nationalitySelect">
+                        <div class="select-trigger">
+                            <span>🌍 All Countries</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="select-options">
+                            <div class="select-option" data-value="">🌍 All Countries</div>
+                            <div class="select-option" data-value="AU">🇦🇺 Australia</div>
+                            <div class="select-option" data-value="BR">🇧🇷 Brazil</div>
+                            <div class="select-option" data-value="CA">🇨🇦 Canada</div>
+                            <div class="select-option" data-value="CH">🇨🇭 Switzerland</div>
+                            <div class="select-option" data-value="DE">🇩🇪 Germany</div>
+                            <div class="select-option" data-value="DK">🇩🇰 Denmark</div>
+                            <div class="select-option" data-value="ES">🇪🇸 Spain</div>
+                            <div class="select-option" data-value="FI">🇫🇮 Finland</div>
+                            <div class="select-option" data-value="FR">🇫🇷 France</div>
+                            <div class="select-option" data-value="GB">🇬🇧 United Kingdom</div>
+                            <div class="select-option" data-value="IE">🇮🇪 Ireland</div>
+                            <div class="select-option" data-value="IN">🇮🇳 India</div>
+                            <div class="select-option" data-value="MX">🇲🇽 Mexico</div>
+                            <div class="select-option" data-value="NL">🇳🇱 Netherlands</div>
+                            <div class="select-option" data-value="NO">🇳🇴 Norway</div>
+                            <div class="select-option" data-value="NZ">🇳🇿 New Zealand</div>
+                            <div class="select-option" data-value="US">🇺🇸 United States</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="nationality" value="">
+                </div>
+                
+                <div class="filter-group">
+                    <button class="generate-btn" id="generateBtn">
+                        <span class="btn-text">Generate Users</span>
+                        <span class="btn-icon">✨</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="loadingState" class="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p>Generating awesome users...</p>
+            </div>
+            
+            <div id="errorState" class="error-state" style="display: none;">
+                <p class="error-message"></p>
+            </div>
+            
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">👥</div>
+                <p>Select filters and click Generate Users to start</p>
+            </div>
+            
+            <div id="userGrid" class="user-grid"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> UserForge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
